@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
-
 [ApiController]
 [Route("api/stories")]
 public class StoriesController(IStoriesService storiesService) : ControllerBase
