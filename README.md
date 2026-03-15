@@ -114,6 +114,4 @@ curl "http://localhost:8080/api/stories/best?n=10"
 ## Possible enhancements
 
 - Add retry/backoff and timeouts for Hacker News HTTP calls.
-- Return `ProblemDetails` consistently for downstream failures (circuit breaker / graceful degradation).
-- Consider caching a full “best stories snapshot” for a short TTL to reduce recomputation while avoiding per-`n` cache keys.
 - Add observability (structured logs + metrics).
